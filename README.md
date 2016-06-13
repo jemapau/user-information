@@ -1,2 +1,2 @@
-# user-information
-User information with Bootstrap
+# User information
+User information landing, using Bootstrap.
