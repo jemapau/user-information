@@ -7,7 +7,8 @@
     <title>User information landing</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,8 +18,85 @@
     <![endif]-->
   </head>
   <body>
-    <h1>User information</h1>
+    <div class="container">
+      <div class="row">
+        <div class="page-header">
+          <h1>User information</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="section col-xs-12">
+          <div class="img-user col-xs-6 col-lg-2">
+            <img class="img-thumbnail" src="assets/img/128.jpg" alt="">
+          </div>
+          <div class="jumbotron col-xs-12 col-lg-10">
+            <h2>Jacqueline Hughes</h2>
+            <p>
+              Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="section">
+          <div class="page-header">
+            <h2>Get access to all our site!</h2>
+          </div>
+            <form class="form-horizontal" action="">
+              <div class="form-group">
+                <label class="col-sm-2 control-label"for="Username">Nombres</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label"for="Username">Apellidos</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label"for="Username">E-mail</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Gender" class="col-sm-2 control-label">Gender</label>
+                <div class="col-sm-10 btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Gender <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">F</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="inputPassword">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control"placeholder="Password">
+                </div>
+              </div>
+              <div class="row">
+                <div class="pull-right col-sm-12 col-md-2 col-lg-2">
+                  <button type="submit" class="btn btn-success">Enviar</button>
+                  <button class="btn btn-danger" type="reset">Cancelar</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+      <div class="row">
+          <footer class="footer">
+           
+            <p>User form with Bootstrap - Exercise 2016</p>
 
+          </footer>
+        </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
