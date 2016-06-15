@@ -6,7 +6,15 @@
 .img-thumbnail {
 	border-radius: 50% !important;
 }
+button a {
+	display: block;
+	text-decoration: none !important;
+	color: white;
+}
 
+button a:hover {
+	color: white;
+}
 
 footer p {
 	text-align: center;

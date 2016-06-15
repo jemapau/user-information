@@ -7,8 +7,12 @@
     <title>User information landing</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link href="styles/styles.css" rel="stylesheet">
     <link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scripts -->
+
+    <script src="scripts/functions.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +44,7 @@
       <div class="row">
         <div class="section">
           <div class="page-header">
-            <h2>Get access to all our site!</h2>
+            <h2>Get access to our site!</h2>
           </div>
             <form class="form-horizontal" action="">
               <div class="form-group">
@@ -69,8 +73,7 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li><a href="#">F</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">M</a></li>
                   </ul>
                 </div>
               </div>
@@ -82,7 +85,9 @@
               </div>
               <div class="row">
                 <div class="pull-right col-sm-12 col-md-2 col-lg-2">
-                  <button type="submit" class="btn btn-success">Send</button>
+                  <button type="submit" class="btn btn-success">
+                    <a href="javascript: void(0)" onclick="login()" id="login">Login</a>
+                  </button>
                   <button class="btn btn-danger" type="reset">Cancel</button>
                 </div>
               </div>
@@ -96,6 +101,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
   </body>
 </html>
