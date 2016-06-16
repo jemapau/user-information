@@ -16,6 +16,11 @@ button a:hover {
 	color: white;
 }
 
+#form-login {
+	padding: 20px;
+	border-radius: 3px;
+}
+
 footer p {
 	text-align: center;
 }
