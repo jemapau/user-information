@@ -50,7 +50,7 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label"for="Username">Names</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" id="username" onblur="validate()">
                 </div>
               </div>
               <div class="form-group">
@@ -80,16 +80,21 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="inputPassword">Password</label>
                 <div class="col-sm-10">
-                  <input type="password" class="form-control"placeholder="Password">
+                  <input type="password" id="password" class="form-control"placeholder="Password" onblur="validate()">
                 </div>
               </div>
-              <div class="row">
                 <div class="pull-right col-sm-12 col-md-2 col-lg-2">
-                  <button type="submit" class="btn btn-success">
-                    <a href="javascript: void(0)" onclick="login()" id="login">Login</a>
+                  <button type="submit" class="btn btn-primary" onclick="greetings()">
+                    Login
                   </button>
                   <button class="btn btn-danger" type="reset">Cancel</button>
                 </div>
+                <div class="row">
+                <div class="pull-right col-sm-12 col-md-8 col-lg-8">
+                  <p id="error"></p>
+                </div>
+              </div>
+              <div class="row">
               </div>
             </form>
         </div>
