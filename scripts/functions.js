@@ -1,3 +1,14 @@
+$(document).ready(function() {
+	$('#form-login').on ({
+		mouseover: function() {
+			$(this).css("background-color", "#f3f1f1");
+		},
+			mouseleave: function() {
+				$(this).css("background-color", "white");
+			},
+	});
+});
+
 function greetings() {
   window.alert('Hi there, you want to log in !');
 };
