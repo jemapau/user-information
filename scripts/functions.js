@@ -7,19 +7,37 @@ $(document).ready(function() {
 				$(this).css("background-color", "white");
 			},
 	});
+
+	$('#btn-login').on ({
+		click: function() {
+			var username, password
+
+			username = $('#username')
+			password = $('#password')
+
+			if ((username === undefined && password === undefined )) {
+				console.log('Entrando a red')
+				$('.validate').css("border-color","red");
+			} else {
+				console.log('Entrando a green')
+				$('.validate').css("border-color","green");
+			}
+		}
+	});
+
 });
 
 function greetings() {
   window.alert('Hi there, you want to log in !');
 };
 
-function validate () {
-  var username, password
+//function validate () {
+  //var username, password
 
-  username = document.getElementById('username').value
-  password = document.getElementById('password').value
+  //username = document.getElementById('username').value
+  //password = document.getElementById('password').value
 
-  if ((username === undefined || username === '')
+/*  if ((username === undefined || username === '')
                   || (password === undefined || password === '')) {
     document.getElementById('error').style.color = "red"
     document.getElementById('error').innerHTML = 'Username or Password are invalid !.'
@@ -27,7 +45,7 @@ function validate () {
     document.getElementById('error').style.color = "green"
     document.getElementById('error').innerHTML = 'Username and Password are valid !.'
   };
-};
+};*/
 
 function listarPeople() {
 	var people = [{nombre: 'Carlos', apellido: 'Ruiz' + ' ' + 'Gómez', edad: '25 años'},
